@@ -31,7 +31,7 @@
 
 # Meaning of terms above:
 # x    # State vector
-# P    # Process Noise Matrix
+# P    # State vector error matrix
 # F    # State Transition matrix
 # C    # Control matrix
 # u    # Control input vector
