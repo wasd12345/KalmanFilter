@@ -124,11 +124,10 @@ if __name__ == '__main__':
 
     def OverwritePNG(filepath):
         #Since if figure is open to watch it in real-time, can get IOError:
-        done = False
-        while done == False:
+        while True:
             try:
                 plt.savefig(filepath)
-                done = True
+                break
             except IOError as e:
                 if e.errno == 13:
                     continue
